@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import FaqItem from '../components/FaqItem.astro';
+
+---
+
+<Layout title="Frequently Asked Questions">
+	<Navbar></Navbar>
+	<main>
+		<h2 style="margin-bottom: 3%; margin-top: 5%;" >Frequently Asked Questions</h2>
+        <div>
+			<FaqItem
+			question="What's Catool?"
+		   answer="Catool is a general purpose discord bot that you can use in anywhere! Catool offers a variety of commands from media editing, fun games and much much more!"
+		   ></FaqItem>
+            <FaqItem
+			 question="How do i add Catool?"
+			answer="Click the add button, the click authorize, and your done!"
+			></FaqItem>
+			<FaqItem
+			question="How do i see what commands are available?"
+		   answer="Type / into a text channel and from the menu that pops up, choose the silly cat"
+		   img="/catool-faq-1.png"
+		   > </FaqItem>
+			<FaqItem
+			question="Where is the source code?"
+		   answer="Catool is currently closed-source, but we are looking to make it open-source somewhere in the future!"
+		   ></FaqItem>
+		   <FaqItem
+		   question=`When i run a command, it gives me a message saying "❌Catool error: Please file a bug report"`
+		  answer=`Something went wrong with catool, please file a bug report in our discord!`
+		  ></FaqItem>
+
+			
+            </div>		
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

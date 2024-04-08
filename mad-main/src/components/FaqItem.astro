@@ -1,0 +1,41 @@
+---
+const { question, answer,img } = Astro.props;
+
+---
+<div class="faq-container">
+    <details>
+        <summary class="faq-text">{question}</summary>
+        <div style="overflow: hidden;" class=" faq-text-small">
+       {answer}
+       <img src={img} alt="">
+        </div>
+      </details>
+</div>
+
+<style>
+.faq-container {
+width: 100%;
+height: min-content;
+border-radius: 7px;
+background-color: #353535;
+padding: 6px;
+padding-left: 15px;
+margin-bottom: 10px;
+}
+.faq-answer-container {
+    border-radius: 7px;
+background-color: #171717;
+padding: 6px;
+
+}
+.faq-text {
+    font-weight: bold;
+    color: white;
+
+}
+.faq-text-small {
+    color: white;
+    font-size: medium;
+
+}
+</style>
