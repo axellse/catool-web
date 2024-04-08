@@ -1,0 +1,70 @@
+---
+const { isdown } = Astro.props;
+---
+
+<header class="site-header">
+    <div style="height: 100%;" class="center-flex">
+        <div class="compress-flex">
+            <img src="/logo-transparent.webp" class="logo-image navbar-group-padding" alt="">
+            <p class="navbar-text navbar-group-padding">Catool</p>
+        </div>
+    
+        <div class="compress-flex">
+            <a class="navbar-link big-navbar-group-padding" href="/">Home</a>
+            <a class="navbar-link big-navbar-group-padding" href="/add">Add to Discord</a>
+            <a class="navbar-link big-navbar-group-padding" href="/faq">FAQ</a>
+            <a class="navbar-link big-navbar-group-padding" href="https://discord.gg/xW9U4v828U">Community</a>
+            <a class="navbar-link big-navbar-group-padding" href="https://axell.me/donate">Supporting</a>
+            <!-- Write your comments here<a class="navbar-link big-navbar-group-padding" href="/about">About</a>-->
+
+        </div>
+
+    </div>
+</header>
+<style>
+.site-header {
+    width: 100%;
+    height: 60px;
+    background-color: #13151a;
+}
+.navbar-link {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+}
+.navbar-link:hover{
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+
+}
+.center-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+}
+.compress-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.navbar-text {
+    font-weight: 700;
+    color: white;
+}
+.navbar-group-padding {
+    padding-right: 5px;
+}
+.big-navbar-group-padding {
+    padding-right: 15px;
+}
+.logo-image {
+    width: 32px;
+    height: 32px;
+}
+</style>

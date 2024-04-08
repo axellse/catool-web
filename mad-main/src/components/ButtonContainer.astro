@@ -1,0 +1,23 @@
+---
+import CustomButton from '../components/CustomButton.astro';
+
+---
+
+<div class="button-container">
+    <CustomButton
+    href="/add",
+    title="Add to discord"
+    ></CustomButton>
+
+</div>
+<style>
+.button-container {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+</style>
