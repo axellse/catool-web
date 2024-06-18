@@ -1,5 +1,7 @@
 # Astro Starter Kit: Basics
 
+this repo hosts the catool website, the project root is inside ./mad-main
+
 ```sh
 npm create astro@latest -- --template basics
 ```
