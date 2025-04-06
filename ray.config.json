@@ -3,15 +3,18 @@
     {
       "Tool" : "npm",
       "Command" : "install",
+      "Dir" : "mad-main",
       "Type" : "build"
     }, 
     {
       "Tool" : "npm",
       "Command" : "run build",
+      "Dir" : "mad-main",
       "Type" : "build"
     }, 
     {
       "Tool" : "rayserve",
+      "Dir" : "mad-main",
       "Options" : {
         "Dir" : "./dist"
       },
