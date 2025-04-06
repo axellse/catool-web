@@ -1,0 +1,21 @@
+{
+  "Pipeline" : [
+    {
+      "Tool" : "npm",
+      "Command" : "install",
+      "Type" : "build"
+    }, 
+    {
+      "Tool" : "npm",
+      "Command" : "run build",
+      "Type" : "build"
+    }, 
+    {
+      "Tool" : "rayserve",
+      "Options" : {
+        "Dir" : "./dist"
+      },
+      "Type" : "deploy"
+    }
+  ]
+}
