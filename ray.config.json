@@ -18,9 +18,8 @@
     }, 
     {
       "Tool" : "rayserve",
-      "Dir" : "mad-main",
       "Options" : {
-        "Dir" : "./dist"
+        "Dir" : "mad-main/dist"
       },
       "Type" : "deploy"
     }
