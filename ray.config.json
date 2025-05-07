@@ -2,7 +2,7 @@
   "Pipeline" : [
     {
       "Tool" : "npm",
-      "Command" : "install",
+      "Command" : ["install"],
       "Options" : {
         "Dir" : "mad-main"
       },
@@ -10,7 +10,7 @@
     }, 
     {
       "Tool" : "npm",
-      "Command" : "run build",
+      "Command" : ["run", "build"],
       "Options" : {
         "Dir" : "mad-main"
       },
